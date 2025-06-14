@@ -11,10 +11,12 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false
   },
-
   "eslint.workingDirectories": [
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "prettier.requireConfig": false,
+  "prettier.useEditorConfig": false,
+  "prettier.resolveGlobalModules": true
 }
