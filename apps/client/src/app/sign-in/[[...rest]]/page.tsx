@@ -4,7 +4,7 @@ import "./sign-in.css";
 function SignInPage() {
   return (
     <div className="sign-in">
-      <SignIn appearance={{ baseTheme: dark }} afterSignInUrl={"/"} />
+      <SignIn appearance={{ baseTheme: dark }} forceRedirectUrl={"/"} />
     </div>
   );
 }

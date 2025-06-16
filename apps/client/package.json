@@ -1,32 +1,36 @@
 {
-  "name": "client",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@clerk/nextjs": "^6.20.2",
-    "@clerk/themes": "^2.2.50",
-    "@reduxjs/toolkit": "^2.8.2",
-    "next": "15.3.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-redux": "^9.2.0"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/estree": "^1.0.8",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.3",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-  }
+    "name": "client",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "cross-env NODE_ENV=staging next dev",
+        "build": "next build",
+        "build:prod": "cross-env NODE_ENV=production next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "@clerk/nextjs": "^6.20.2",
+        "@clerk/themes": "^2.2.50",
+        "@reduxjs/toolkit": "^2.8.2",
+        "next": "15.3.3",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-redux": "^9.2.0",
+        "react-type-animation": "^3.2.0"
+    },
+    "devDependencies": {
+        "@eslint/eslintrc": "^3",
+        "@tailwindcss/postcss": "^4",
+        "@types/estree": "^1.0.8",
+        "@types/node": "^20.19.0",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "@types/react-type-animation": "^2.0.0",
+        "cross-env": "^7.0.3",
+        "dotenv": "^16.5.0",
+        "eslint": "^9",
+        "eslint-config-next": "15.3.3",
+        "tailwindcss": "^4",
+        "typescript": "^5"
+    }
 }
